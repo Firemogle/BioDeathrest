@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+  <packageId>OpenAI.DeathrestBiosculptor</packageId>
+  <name>Deathrest Biosculptor Interface</name>
+  <author>Firemogle</author>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <description>Allows biosculptor routines to operate on pawns while they remain in Deathrest.</description>
+  <modDependencies>
+    <li><packageId>Ludeon.RimWorld.Biotech</packageId><displayName>Biotech</displayName></li>
+    <li><packageId>vanillaexpanded.vnutriente</packageId><displayName>Vanilla Nutrient Paste Expanded</displayName><steamWorkshopUrl>https://steamcommunity.com/workshop/app/1826140</steamWorkshopUrl></li>
+  </modDependencies>
+</ModMetaData>
