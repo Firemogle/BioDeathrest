@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DeathrestBiosculptor</RootNamespace>
+    <AssemblyName>DeathrestBiosculptor</AssemblyName>
+    <Platforms>AnyCPU</Platforms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseOutputPath>..\Assemblies\</BaseOutputPath>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>..\References\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>..\References\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="PipeSystem"><HintPath>..\References\PipeSystem.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VEF"><HintPath>..\References\VEF.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
