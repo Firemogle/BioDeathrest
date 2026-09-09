@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DeathrestBiosculptor.DeathrestBiosculptorEffectDef><defName>DRB_AgeReversal</defName><label>age reversal</label><cycleKey>ageReversal</cycleKey><handlerClass>DeathrestBiosculptor.VanillaAgeReversalHandler</handlerClass></DeathrestBiosculptor.DeathrestBiosculptorEffectDef>
+  <DeathrestBiosculptor.DeathrestBiosculptorEffectDef><defName>DRB_Medic</defName><label>medic</label><cycleKey>medic</cycleKey><handlerClass>DeathrestBiosculptor.VanillaMedicHandler</handlerClass></DeathrestBiosculptor.DeathrestBiosculptorEffectDef>
+  <DeathrestBiosculptor.DeathrestBiosculptorEffectDef><defName>DRB_Bioregeneration</defName><label>bioregeneration</label><cycleKey>bioregeneration</cycleKey><handlerClass>DeathrestBiosculptor.VanillaBioregenerationHandler</handlerClass></DeathrestBiosculptor.DeathrestBiosculptorEffectDef>
+  <DeathrestBiosculptor.DeathrestBiosculptorEffectDef><defName>DRB_Pleasure</defName><label>pleasure</label><cycleKey>pleasure</cycleKey><handlerClass>DeathrestBiosculptor.VanillaPleasureHandler</handlerClass></DeathrestBiosculptor.DeathrestBiosculptorEffectDef>
+</Defs>
