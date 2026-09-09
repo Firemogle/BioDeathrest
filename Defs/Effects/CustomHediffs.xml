@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef><defName>DRB_AgeReversalReceived</defName><label>received age reversal</label><description>The body has recently undergone an age-reversal treatment.</description><hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><stages><li><label>renewed</label><moodEffect>3</moodEffect></li></stages><comps><li Class="HediffCompProperties_Disappears" /></comps></HediffDef>
+  <HediffDef><defName>DRB_Pleasure</defName><label>biosculptor pleasure</label><description>A temporary mood elevation caused by a biosculptor pleasure cycle.</description><hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><stages><li><label>euphoric</label><moodEffect>15</moodEffect></li></stages><comps><li Class="HediffCompProperties_Disappears" /></comps></HediffDef>
+</Defs>
