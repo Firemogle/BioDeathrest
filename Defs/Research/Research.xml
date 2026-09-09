@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef ParentName="ResearchProjectBase">
+    <defName>DRB_DeathrestBiosculptorInterface</defName>
+    <label>deathrest biosculptor interface</label>
+    <description>Develop an interface that lets biosculptor technology operate on a pawn during deathrest.</description>
+    <baseCost>1800</baseCost>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>Biosculpting</li><li>Deathrest</li></prerequisites>
+    <tags><li>MultiAnalyzer</li></tags>
+  </ResearchProjectDef>
+</Defs>
