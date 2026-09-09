@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="DeathrestBuildingBase">
+    <defName>DRB_BiosculptorInterface</defName>
+    <label>deathrest biosculptor interface</label>
+    <description>A compact biosculpting interface that locks onto a Deathrest Casket. It can perform one biosculptor cycle on the deathresting pawn without interrupting deathrest.</description>
+    <thingClass>Building</thingClass>
+    <graphicData><texPath>DRB/BiosculptorInterface</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>(3,1)</drawSize><shadowData><volume>(2.7,0.35,0.75)</volume></shadowData></graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot><altitudeLayer>Building</altitudeLayer><passability>PassThroughOnly</passability><fillPercent>0.25</fillPercent><size>(3,1)</size><canOverlapZones>false</canOverlapZones><terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <costList><Steel>100</Steel><ComponentIndustrial>4</ComponentIndustrial></costList><constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites><li>DRB_DeathrestBiosculptorInterface</li></researchPrerequisites><uiOrder>2505</uiOrder><tickerType>Normal</tickerType><drawerType>MapMeshAndRealTime</drawerType>
+    <statBases><MaxHitPoints>250</MaxHitPoints><Mass>45</Mass><Flammability>0.2</Flammability><Beauty>-4</Beauty></statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound><haulToContainerDuration>120</haulToContainerDuration><uninstallWork>1800</uninstallWork>
+      <fixedStorageSettings><filter><categories><li>Foods</li></categories><specialFiltersToDisallow><li>AllowPlantFood</li></specialFiltersToDisallow><disallowedThingDefs><li>Hay</li></disallowedThingDefs></filter></fixedStorageSettings>
+      <defaultStorageSettings><filter><categories><li>Foods</li></categories><disallowedCategories><li>EggsFertilized</li></disallowedCategories><disallowedThingDefs><li>InsectJelly</li><li>MealLavish</li><li>MealLavish_Veg</li><li>MealLavish_Meat</li><li>Chocolate</li><li MayRequire="Ludeon.Rimworld.Biotech">HemogenPack</li></disallowedThingDefs></filter></defaultStorageSettings>
+    </building>
+    <inspectorTabs><li>ITab_BiosculpterNutritionStorage</li></inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>200</basePowerConsumption><idlePowerDraw>25</idlePowerDraw></li>
+      <li Class="CompProperties_DeathrestBindable"><displayTimeActive>false</displayTimeActive></li>
+      <li MayRequire="vanillaexpanded.vnutriente" Class="PipeSystem.CompProperties_Resource"><pipeNet>VNPE_NutrientPasteNet</pipeNet></li>
+      <li Class="CompProperties_BiosculpterPod_HealingCycle"><compClass>CompBiosculpterPod_MedicCycle</compClass><key>medic</key><label>medic</label><description>Heal all fresh wounds, blood loss, and one random infectious disease.</description><iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath><durationDays>6</durationDays><conditionsToPossiblyCure><li>Malaria</li><li>SleepingSickness</li><li>Flu</li><li>Plague</li><li>GutWorms</li><li>MuscleParasites</li><li>WoundInfection</li></conditionsToPossiblyCure></li>
+      <li Class="CompProperties_BiosculpterPod_HealingCycle"><compClass>CompBiosculpterPod_RegenerationCycle</compClass><key>bioregeneration</key><label>bioregeneration</label><description>Heal all fresh wounds, heal one random permanent injury, and restore small missing body parts.</description><iconPath>UI/Gizmos/BiosculpterCycleBioregeneration</iconPath><durationDays>25</durationDays><extraRequiredIngredients><MedicineUltratech>2</MedicineUltratech></extraRequiredIngredients><requiredResearch><li>Bioregeneration</li></requiredResearch><bodyPartsToRestore><li>Eye</li><li>Ear</li><li>Nose</li><li>Finger</li><li>Toe</li><li>Tongue</li></bodyPartsToRestore></li>
+      <li Class="CompProperties_BiosculpterPod_AgeReversalCycle"><key>ageReversal</key><label>age reversal</label><description>Reverse aging.</description><iconPath>UI/Gizmos/BiosculpterCycleAgeReversal</iconPath><durationDays>8</durationDays><gainThoughtOnCompletion>AgeReversalReceived</gainThoughtOnCompletion></li>
+      <li Class="CompProperties_BiosculpterPod_PleasureCycle"><key>pleasure</key><label>pleasure</label><description>Temporarily reshape the nervous system to deliver elevated levels of happiness.</description><iconPath>UI/Gizmos/BiosculpterCyclePleasure</iconPath><durationDays>4</durationDays></li>
+      <li Class="DeathrestBiosculptor.CompProperties_DeathrestBiosculptorNutrition"><enterSound>BiosculpterPod_Enter</enterSound><exitSound>BiosculpterPod_Exit</exitSound><operatingEffecter>BiosculpterPod_Operating</operatingEffecter><readyEffecter>BiosculpterPod_Ready</readyEffecter><biotunedCycleSpeedFactor>1.25</biotunedCycleSpeedFactor><autoLoadNutrition>true</autoLoadNutrition></li>
+      <li Class="DeathrestBiosculptor.CompProperties_DeathrestBiosculptor" />
+    </comps>
+  </ThingDef>
+</Defs>
