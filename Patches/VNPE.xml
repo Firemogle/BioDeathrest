@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- PipeSystem integration is declared directly on the building when VNPE is installed. -->
+</Patch>
